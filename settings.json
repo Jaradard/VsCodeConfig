@@ -131,7 +131,13 @@
     "psalm.xml": "psalm-baseline.xml",
     ".php-cs-fixer.php": ".php-cs-fixer.cache",
     "phpunit.xml": ".phpunit.result.cache",
-    "*.php": "${basename}Test.php"
+    "*.php": "${basename}Test.php",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
 
   "files.associations": {
@@ -250,13 +256,18 @@
     "editor.formatOnSave": true
   },
 
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
 
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnSave": true
   },
 
@@ -282,5 +293,6 @@
 
   "remote.SSH.remotePlatform": {
     "dep-pa-devint": "linux"
-  }
+  },
+  "Devdb.colorTheme": "dark"
 }
