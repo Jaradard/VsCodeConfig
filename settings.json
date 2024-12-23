@@ -1,45 +1,6 @@
 {
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.profiles.linux": {
-    "bash": {
-      "path": "/usr/bin/env",
-      "args": [
-        "--",
-        "flatpak-spawn",
-        "--host",
-        "--env=TERM=xterm-256color",
-        "bash"
-      ]
-    },
-    "zsh": {
-      "path": "/usr/bin/env",
-      "args": [
-        "--",
-        "flatpak-spawn",
-        "--host",
-        "--env=TERM=xterm-256color",
-        "zsh"
-      ]
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "/usr/bin/env",
-      "args": [
-        "--",
-        "flatpak-spawn",
-        "--host",
-        "--env=TERM=xterm-256color",
-        "pwsh"
-      ]
-    }
-  },
   "terminal.explorerKind": "both",
   "terminal.integrated.ignoreProcessNames": ["starship", "oh-my-posh"],
 
@@ -175,6 +136,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
 
   "php.suggest.basic": false,
+  "php.executablePath": "/usr/bin/php",
 
   "problems.decorations.enabled": false,
 
@@ -235,7 +197,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": "single",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "workbench.startupEditor": "none",
@@ -294,5 +256,6 @@
   "remote.SSH.remotePlatform": {
     "dep-pa-devint": "linux"
   },
-  "Devdb.colorTheme": "dark"
+  "Devdb.colorTheme": "dark",
+  "vsicons.dontShowNewVersionMessage": true
 }
